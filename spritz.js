@@ -10,18 +10,6 @@ var diffbot_token = '2efef432c72b5a923408e04353c39a7c';
 function create_spritz(){
 
      spritz_loader = function() {
-        //getURL("https://rawgithub.com/sulami/OpenSpritz/master/spritz.html", function(data){
-
-        //getURL("https://rawgithub.com/sulami/OpenSpritz/dev/spritz.html", function(data){
-
-        // This won't work in Firefox because an old bug and won't work in Chrome because of security stuff:
-        //getURL("spritz.html", function(data){
-
-        //getURL("https://rawgithub.com/sulami/OpenSpritz/dev/spritz.html", function(data){
-
-        // RawGit's CDN usage:
-        // "Since files are not refreshed after the first request,
-        // it's best to use a specific tag or commit URL, not a branch URL."
         getURL("https://cdn.rawgit.com/sulami/OpenSpritz/master/spritz.html", function(data){
             var spritzContainer = document.getElementById("spritz_container");
 
